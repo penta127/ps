@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/itoukouki/Downloads/選択項目から作成したフォルダ/push_swap_push",
+      "program": "/Users/itoukouki/Downloads/選択項目から作成したフォルダ/push_swap_push/build/Debug/outDebug"
+    }
+  ]
+}
