@@ -11,6 +11,7 @@ int	main(int argc, char **argv)
 		return (1);
 	stacks_in_null(stacks);
 	in_sort_number(stacks, argc, argv);
+	index_stack(stacks);
 	execute_sort(stacks);
 	free_stack_a(&stacks->A);
 	free_stack_b(&stacks->B);

@@ -19,7 +19,8 @@ SRCS = execute_sort.c \
 		sort_2_3.c \
 		sort_4_5.c \
 		ss_ps.c \
-		stacks_free_null.c
+		stacks_free_null.c \
+		index_stack.c
 
 OBJS = $(SRCS:.c=.o)
 
@@ -32,7 +33,7 @@ CFLAGS = -Wall -Wextra -Werror -I $(INCLUDE_DIR)
 .PHONY: all clean fclean re
 
 $(NAME): $(OBJS)
-			ar rcs $(NAME) $(OBJS)
+			$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
 
 all: $(NAME)
 

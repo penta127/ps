@@ -44,7 +44,7 @@ void free_split_stacks(t_stacks *stacks, char **split_number);
 //in_sort_number
 void	in_sort_number(t_stacks *stacks, int argc, char **argv);
 //in_sort_number-ft_split_ps
-size_t ft_strlen(char *s);
+size_t ft_strlen(const char *s);
 size_t	col_malloc_len(char const *s, char c);
 char	*ft_strdup_sp(const char *src, char c, size_t i);
 char	**result_sp(t_stacks *stacks, char **out, char const *s, char c);
@@ -98,5 +98,10 @@ void	rrb_ps(t_stacks *stacks);
 void	rra_ps_rrr(t_stacks *stacks);
 void	rrb_ps_rrr(t_stacks *stacks);
 void	rrr_ps(t_stacks *stacks);
+//index_stack
+void index_sort(int *index, int a_size);
+int index_search(int *index, int a_size, int value);
+void index_stack(t_stacks *stacks);
+
 
 #endif

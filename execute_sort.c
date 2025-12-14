@@ -2,7 +2,7 @@
 
 unsigned int value_to_unsigned(int value)
 {
-	return ((unsigned int)value ^ 0x80000000u);
+	return ((unsigned int)value);
 }
 
 int	max_bit_size(t_stacks *stacks)

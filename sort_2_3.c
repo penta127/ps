@@ -35,6 +35,8 @@ void sort_3(t_stacks *stacks)
 	max_position = 1;
 	max_value = stacks->A.top->value;
 	n1 = stacks->A.top;
+	if (ascending_order_check(&stacks->A))
+		return ;
 	while (n1)
 	{
 		if (max_value < n1->value)
